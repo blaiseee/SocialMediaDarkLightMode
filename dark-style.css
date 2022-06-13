@@ -1,0 +1,472 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    flex: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #050505;
+}
+
+p
+{
+    position: relative;
+}
+
+p.overview-text
+{
+    position: relative;
+    color: whitesmoke;
+    font-size: 28px;
+    top: -60px;
+    left: 10px;
+}
+
+h1
+{
+    color: whitesmoke;
+    position: relative;
+    top: 20px;
+    font-size: 38px;
+}
+
+h3
+{
+    color: whitesmoke;
+    position: relative;
+    font-size: 16px;
+    top: 0px;
+    color: gray;
+}
+
+h4
+{
+    position: relative;
+    top: -12px;
+    font-size: 14px;
+    color: gray;
+}
+
+h6 
+{
+    color: whitesmoke;
+}
+
+header
+{
+    display: inline-block;
+    width: 100%;
+    background-color: #0d0d0d;
+    height: 280px;
+}
+
+.header-wrapper
+{
+    position: relative;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr
+{
+    display: none;
+}
+
+.fe-wrapper
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: -120px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .fe-box
+    {
+        background: #121212;
+        height: 250px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 8px;
+    }
+        
+        .box
+        {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            padding-top: 20px;
+        }
+  
+        .box-top-facebook
+        {
+            height: 5px;
+            width: 300px;
+            background-color: lightskyblue;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .box-top-twitter
+        {
+            height: 5px;
+            width: 300px;
+            background-color: lightblue;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .box-top-instagram
+        {
+            height: 5px;
+            width: 300px;
+            background-image: linear-gradient(to right, orange, pink);
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .box-top-youtube
+        {
+            height: 5px;
+            width: 300px;
+            background-color: red;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .icon
+        {
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+            padding-right: 10px;
+        }
+
+        .name
+        {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        img
+        {
+            height: 25px;
+        }
+
+        .number
+        {
+            color: white;
+            position: relative;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            top: 10px;
+        }
+
+        .followers
+        {
+            position: relative; 
+            color: gray;
+            font-weight: normal;
+            letter-spacing: 8px;
+            text-align: center;
+            top: -10px;
+        }
+
+        .delta
+        {
+            text-align: center;
+        }
+
+        .up
+        {
+            color: green;
+            font-weight: bold;
+        }
+
+        .down
+        {
+            color: red;
+            font-weight: bold;
+        }
+
+/* Overview */
+.overview-header
+{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overview-perf
+{
+    position: relative;
+    align-content: space-evenly;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -90px;
+}
+
+    .overview-wrapper
+    {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .overview-box
+    {
+        background: #121212;
+        margin: 10px;
+        height: 150px;
+        width: 300px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 3fr 1.3fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .page-views
+    {
+        padding-left: 40px;
+        color: gray;
+        padding-top: 34px;
+        font-size: 16px;
+    }
+
+    .page-logo
+    {
+        padding-top: 30px;
+        padding-left: 20px;
+        text-align: right;
+        padding-right: 30px
+    }
+
+    .views
+    {
+        color: whitesmoke;
+        padding-top: 5px;
+        padding-left: 40px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .percentage
+    {
+        padding-top: 25px;
+        text-align: right;
+        padding-right: 14px;
+    }
+
+/* Slider */
+.color-toggle
+{
+    position: relative;
+    display: flex;
+    float: right;
+    top: -84px;
+    width: 180px;
+}
+
+.text-toggle
+{
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    flex: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: rotate(180deg);
+}
+
+  .switch input
+  {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider
+  {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    background-image: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before
+  {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider 
+  {
+    background-image: linear-gradient(to right, lightblue, lightgreen);
+  }
+  
+  input:focus + .slider 
+  {
+    box-shadow: 0 0 1 px grey;
+  }
+  
+  input:checked + .slider:before
+  {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: white;
+  }
+  
+  /* Rounded Slider */
+  .slider.round
+  {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before
+  {
+    border-radius: 50%;
+  }
+
+@media (max-width: 1355px)
+{
+    h1 
+    {
+        margin-left: 20px;        
+    }
+
+    h3 
+    {
+        margin-left: 20px;
+    }
+
+    h2 
+    {
+        margin-left: 20px;
+    }
+
+    .color-toggle 
+    {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    h1
+    {
+        margin-left: 20px;
+        font-size: 29px;
+        transform: ease-in-out 0.5s;
+        -webkit-transform: ease-in-out 0.5s;
+        padding-right: 10px;
+    }
+
+    h3
+    {
+        top: 10px;
+    }
+
+    header
+    {
+        background-color: 0d0d0d;
+        transform: ease-in-out 0.5s;
+        -webkit-transform: ease-in-out 0.5s;
+    }
+
+    .color-toggle
+    {
+        top: 30px;
+        float: left;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .fe-wrapper
+    {
+        top: -30px;
+        transform: ease-in-out 0.5s;
+        -webkit-transform: ease-in-out 0.5s;
+    }
+
+    hr
+    {
+        position: relative;
+        display: block;
+        width: 90%;
+        top: 20px;
+        color: whitesmoke
+    }
+
+    .overview-perf
+    {
+        top: -75px;
+    }
+}
+
+@media (max-width: 640px)
+{
+    .header-wrapper
+    {
+        left: 0px;
+    }
+
+    .box
+    {
+        width: 350px;
+    }
+
+    .overview-box
+    {
+        width: 300px;
+    }
+
+    .box-top-facebook
+    {
+        width: 300px;
+    }
+
+    .box-top-twitter
+    {
+        width: 300px;
+    }
+
+    .box-top-instagram
+    {
+        width: 300px;
+    }
+
+    .box-top-youtube
+    {
+        width: 300px;
+    }
+}
